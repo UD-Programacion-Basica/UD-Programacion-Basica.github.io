@@ -1,4 +1,13 @@
 {
   "schema": "classroom50/assignments/v1",
-  "assignments": []
+  "assignments": [
+    {
+      "slug": "hola-c",
+      "name": "Hola C",
+      "description": "Primera tarea de prueba de Classroom 50",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true
+    }
+  ]
 }
