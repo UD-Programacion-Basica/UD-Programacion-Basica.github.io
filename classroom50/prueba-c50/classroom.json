@@ -1,0 +1,21 @@
+{
+  "schema": "classroom50/classroom/v1",
+  "name": "Prueba Classroom 50",
+  "short_name": "prueba-c50",
+  "term": "2026-3",
+  "org": "UD-Programacion-Basica",
+  "team": {
+    "id": 18629598,
+    "slug": "classroom50-prueba-c50"
+  },
+  "teams": {
+    "teacher": {
+      "id": 18629600,
+      "slug": "classroom50-prueba-c50-teacher"
+    },
+    "ta": {
+      "id": 18629601,
+      "slug": "classroom50-prueba-c50-ta"
+    }
+  }
+}
