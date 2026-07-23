@@ -45,6 +45,43 @@
         }
       ],
       "feedback_pr": true
+    },
+    {
+      "slug": "hola-c-unica",
+      "name": "Hola C Entrega Única",
+      "description": "Prueba del flujo de una sola entrega oficial con evaluación inmediata de estilo",
+      "mode": "individual",
+      "autograder": "default",
+      "tests": [
+        {
+          "name": "Compila sin errores",
+          "type": "run",
+          "run": "gcc -std=c17 -Wall -Wextra -Wpedantic -o programa main.c",
+          "timeout": 15,
+          "exit-code": 0,
+          "points": 4
+        },
+        {
+          "name": "Termina correctamente",
+          "type": "run",
+          "setup": "gcc -std=c17 -Wall -Wextra -Wpedantic -o programa main.c",
+          "run": "./programa",
+          "timeout": 5,
+          "exit-code": 0,
+          "points": 2
+        },
+        {
+          "name": "Imprime el saludo",
+          "type": "io",
+          "setup": "gcc -std=c17 -Wall -Wextra -Wpedantic -o programa main.c",
+          "run": "./programa",
+          "expected": "Hola Classroom 50",
+          "comparison": "included",
+          "timeout": 5,
+          "points": 4
+        }
+      ],
+      "feedback_pr": true
     }
   ]
 }
